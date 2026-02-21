@@ -15,12 +15,14 @@ def main():
 
         while number_is_classified:
 
+            
             #Пользователь пытается угадать число
             guess_input_number = int(input())
 
             #Проверка на вхождение числа в диапазон
             if (guess_input_number < 1 or guess_input_number > 100):
                 print('Введённое число вне диапазона! Введите чило от 1 до 100.')
+                continue
 
             if (guess_input_number < mystery_number):
                 print('Введённое число больше! Попробуйте снова ;)')
